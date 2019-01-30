@@ -1,0 +1,45 @@
+Kenneth Salanga Quiz 7 Corrections
+Question 5:
+The Correct Answer is:
+ArrayList<Integer> data = new ArrayList<Integer>();
+data.add(-5);
+data.add(-1);
+data.add(-4);
+data.add(-2);
+data.add(-3);
+
+findMaximum(data);
+
+Find Maximum does not work as expected fro this Arraylist because the arrays will show 0 as a maximum because none of the negatives in the list are greater than 0. 0 is not in the array set so it doesn't work as intended.
+
+Question 6:
+The Correct Answer is:
+ArrayList<Integer> perfectSquares = new ArrayList<Integer>();
+
+for (int i = 1; i <= 10; i++) {
+    perfectSquares.add(i * i);
+}
+
+This is the correct answer because it is the only function that will go through the array list and will represent each of the perfect squares between 1 and 10. Every other function starts with 0 or ends off a bit longer than 10.
+
+Question 7:
+The correct answer is:
+An IndexOutOfBoundsException will be thrown.
+
+This is the correct answer because the arraylist was only initialized without any values in it. If an arraylist is called from an index that doesn't exist it will throw an IndexOutOfBounds Exception.
+
+Question 9: 
+The correct answers are:
+The add method, The remove method, and The Size method.
+
+ArrayList<String> names = new ArrayList<String>();
+
+names.add("Paul");
+names.remove(0);
+
+System.out.println("There are " + names.size() + " elements in the ArrayList.");
+
+These functions were the only ones called in the code segment. Every other thing does not pertain to this arraylist or is wrong.
+
+Question 12:
+Length is a property of an array and Size is a method of an array. This can be seen through the use of parentheses. When calling an array length you use array.length while calling an arraylist lenght is with arraylist.size(). size() is a method from the arraylist. 
